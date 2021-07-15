@@ -44,6 +44,41 @@ a{
     }
 }
 
+.linkContact{
+    font-size: 32px;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    transition: .5s ease;
+
+    position: relative;
+
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0%;
+        height: 1px;
+
+        transform: translate(20%, -50%);
+        transition: .5s ease;
+
+        background-color: $orange-normal; 
+    }
+
+    &:hover{
+        opacity: .8;
+
+        &::after{
+            width: 80%;
+
+        }
+    
+    }
+}
+
 h1{
     font-size: 72px;
     line-height: 100%;
