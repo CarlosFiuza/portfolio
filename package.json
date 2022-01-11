@@ -46,6 +46,10 @@
   },
   "devDependencies": {
     "file-loader": "^6.1.1",
+    "webpack": "^4.44.2",
     "webpack-dev-middleware": "^5.0.0"
+  },
+  "optionalDependencies": {
+    "fsevents": "2.1.2"
   }
 }
